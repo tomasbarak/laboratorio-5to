@@ -18,7 +18,7 @@ select COUNT(edad), edad from Mascota group by edad;
 select COUNT(peso), peso from Mascota group by peso;
 
 ##5
-select SUM(peso) from Mascota where edad >= 5 && edad <= 10;
+select SUM(peso) from Mascota where edad >= 5 AND edad <= 10;
 
 ##6
 select avg(peso) from Mascota;
