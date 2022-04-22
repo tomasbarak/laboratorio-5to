@@ -28,7 +28,7 @@ DELIMITER //
 
 CREATE PROCEDURE mascotasAsignadas(IN id_amo INT)
 BEGIN
-SELECT COUNT(Mascota) FROM Mascotas WHERE id_mascota in (SELECT id_mascota WHERE id_amo = id_dueño);
+SELECT COUNT(Mascota) FROM Mascota WHERE id_mascota in (SELECT id_mascota WHERE id_amo = id_dueño);
 END //
 
 CALL mascotasAsignadas(1);
